@@ -47,6 +47,6 @@ blocks:
       - name: docker tag latest
         commands:
           - echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
-          - docker pull semaphoredemos/semaphore-demo-ruby-kubernetes:$SEMAPHORE_WORKFLOW_ID
-          - docker tag semaphoredemos/semaphore-demo-ruby-kubernetes:$SEMAPHORE_WORKFLOW_ID semaphoredemos/semaphore-demo-ruby-kubernetes:latest
-          - docker push semaphoredemos/semaphore-demo-ruby-kubernetes:latest
+          - docker pull rehabsabry/semaphore-demo-ruby-kubernetes:$SEMAPHORE_WORKFLOW_ID
+          - docker tag rehabsabry/semaphore-demo-ruby-kubernetes:$SEMAPHORE_WORKFLOW_ID rehabsabry/semaphore-demo-ruby-kubernetes:latest
+          - docker push rehabsabry/semaphore-demo-ruby-kubernetes:latest
